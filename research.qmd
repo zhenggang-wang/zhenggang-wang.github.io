@@ -38,5 +38,7 @@ editor: visual
 ### Work in Progress
 
 - Measuring sector-specific return to skills in the Chinese labor market (with [Naijia Guo](https://sites.google.com/view/naijia-guo/home?authuser=0))
+- Major choice and labor market performance
+- Marriage transfer and internal migration in China
 
 <small>*\*presented by coauthor(s)*</small>
