@@ -5,7 +5,7 @@ project:
 website:
   page-navigation: true
   title: "Zhenggang Wang"
-  site-url: https://lianyujun.github.io
+  site-url: https://zhenggang-wang.github.io/
   favicon: images/apple-touch-icon-180x180.png
   #repo-url: https://github.com/lianyujun/lianyujun.github.io
   #repo-actions: [edit, issue]

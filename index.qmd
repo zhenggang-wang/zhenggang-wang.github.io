@@ -16,9 +16,6 @@ about:
     - icon: fingerprint
       text: ORCID
       href: https://orcid.org/0009-0004-4326-7183
-    - icon: brands xing
-      text: 小红书
-      href: https://www.xiaohongshu.com/user/profile/618625a00000000010008f83
 ---
 
 ::: {#hero-heading}
