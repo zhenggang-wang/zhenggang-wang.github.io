@@ -16,6 +16,10 @@ about:
     - icon: fingerprint
       text: ORCID
       href: https://orcid.org/0009-0004-4326-7183
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/zhenggang-wang-355255187
+  
 ---
 
 ::: {#hero-heading}
