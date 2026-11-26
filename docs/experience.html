@@ -106,6 +106,34 @@ ul.task-list li input[type="checkbox"] {
   }
 }
 </style>
+<style>
+/* 电脑端：正文位置与 Research 页一致 */
+@media (min-width: 992px) {
+  main#quarto-document-content {
+    position: relative;
+    left: 20px;
+    padding-top: 24px;
+  }
+}
+
+/* Experience 大标题与第一个小标题之间的留白 */
+#quarto-document-content > #title-block-header {
+  margin-bottom: 42px;
+}
+
+/* 三个小标题：不加分割线，只与下方列表留出一点距离 */
+#quarto-document-content > section.level3 > h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* 相邻栏目之间的距离，与 Research 页一致 */
+#quarto-document-content > section.level3 + section.level3 {
+  margin-top: 40px;
+}
+</style>
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
