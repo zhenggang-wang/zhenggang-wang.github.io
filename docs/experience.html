@@ -72,7 +72,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<style>
+/* 隐藏右侧放大镜，保留手机端的菜单按钮 */
+#quarto-header #quarto-search {
+  display: none !important;
+}
 
+/* 电脑端：与 Home 页使用相同的顶栏高度、对齐和间距 */
+@media (min-width: 992px) {
+  #quarto-header .navbar {
+    min-height: 76px;
+    padding: 0;
+  }
+
+  #quarto-header .navbar-container {
+    width: 100%;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding-inline: clamp(24px, 3vw, 48px);
+  }
+
+  #quarto-header .navbar-brand-container {
+    margin-inline: 0 !important;
+  }
+
+  #quarto-header #navbarCollapse {
+    justify-content: flex-end;
+  }
+
+  #quarto-header .navbar-nav {
+    margin-left: auto;
+    gap: 12px;
+  }
+}
+</style>
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
