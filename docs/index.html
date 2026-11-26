@@ -72,6 +72,57 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<style>
+/* 把小圆头像改成大竖照，覆盖原来的 12em 宽高 */
+div.quarto-about-trestles .about-entity img.about-image {
+  width: 100% !important;
+  max-width: 340px;
+  height: auto !important;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px !important;
+}
+
+/* 电脑屏幕：加宽主页，左边放照片，右边放简介 */
+@media (min-width: 992px) {
+  #quarto-content > main#quarto-document-content {
+    grid-column: 1 / -1;
+    width: min(1120px, 90vw);
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  div.quarto-about-trestles {
+    display: grid;
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: clamp(36px, 5vw, 80px);
+    align-items: start;
+  }
+
+  div.quarto-about-trestles .about-entity {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+  }
+
+  div.quarto-about-trestles .about-contents {
+    min-width: 0;
+    border-left: none;
+    padding: 0;
+    margin-top: 32px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+}
+
+/* 手机屏幕：照片不要占满屏幕 */
+@media (max-width: 767px) {
+  div.quarto-about-trestles .about-entity img.about-image {
+    max-width: 240px;
+  }
+}
+</style>
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
