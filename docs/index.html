@@ -123,6 +123,86 @@ div.quarto-about-trestles .about-entity img.about-image {
   }
 }
 </style>
+<style>
+/* 导航栏：隐藏放大镜，保留手机上的菜单按钮 */
+#quarto-header #quarto-search {
+  display: none !important;
+}
+
+/* 以下只调整电脑端 */
+@media (min-width: 992px) {
+
+  /* 1. 主页主体居中：照片 300px，正文占剩余空间 */
+  #quarto-content > main#quarto-document-content {
+    width: min(960px, 90vw);
+    max-width: none;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  #quarto-document-content .quarto-about-trestles {
+    display: grid !important;
+    grid-template-columns: 300px minmax(0, 1fr);
+    column-gap: clamp(40px, 4.5vw, 72px);
+    align-items: start;
+    width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  #quarto-document-content .about-entity,
+  #quarto-document-content .about-contents {
+    width: 100%;
+    min-width: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+
+  /* 2. 正文：首行略低于照片上缘，字号和行距接近参考图 */
+  #quarto-document-content .about-contents {
+    border-left: none;
+    margin-top: 28px;
+  }
+
+  #hero-heading p {
+    font-size: 17px;
+    line-height: 1.85;
+    margin: 0 0 20px;
+  }
+
+  #hero-heading p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* 3. 导航栏：加高，解除内部容器的宽度限制 */
+  #quarto-header .navbar {
+    min-height: 76px;
+    padding: 0;
+  }
+
+  #quarto-header .navbar-container {
+    width: 100%;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding-inline: clamp(24px, 3vw, 48px);
+  }
+
+  /* 姓名靠左，覆盖原来的 mx-auto 自动居中 */
+  #quarto-header .navbar-brand-container {
+    margin-inline: 0 !important;
+  }
+
+  /* Home、Research、Experience 靠右 */
+  #quarto-header #navbarCollapse {
+    justify-content: flex-end;
+  }
+
+  #quarto-header .navbar-nav {
+    margin-left: auto;
+    gap: 12px;
+  }
+}
+</style>
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -192,9 +272,9 @@ div.quarto-about-trestles .about-entity img.about-image {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
-<p>Welcome to my site!<p> 
-<p>I am Zhenggang Wang, a Ph.D.&nbsp;student in Economics at <a href="[link](https://www.hkubs.hku.hk/)">HKU Business School</a>. I obtained my Bachelor’s Degree in Economics from <a href="[link](https://econ.pku.edu.cn/)">School of Economics, Peking University</a>.</p>
-<p>My research interests include labor economics, development economics, and Chinese economy, with special focus on migration and education.</p>
+<p><strong>Welcome to my site!</strong></p> 
+<p>I am Zhenggang Wang, a Ph.D.&nbsp;student in Economics at <a href="https://www.hkubs.hku.hk/">HKU Business School</a>. I obtained my Bachelor’s Degree in Economics from <a href="https://econ.pku.edu.cn/">School of Economics, Peking University</a>.</p>
+<p>My research interests include labor economics, development economics, and the Chinese economy, with a special focus on migration and education.</p>
 <p>Contact: <a href="mailto:wzgang@connect.hku.hk">wzgang@connect.hku.hk</a></p>
 </div></div>
 </div>
